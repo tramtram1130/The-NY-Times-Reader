@@ -1,3 +1,8 @@
-.genre-links > a {
+.genre-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.genre-links > p {
   margin: .5rem;
 }

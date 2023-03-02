@@ -5,6 +5,8 @@
 
 .card-image {
   width: 30vw;
+  height: 40vh;
+  object-fit: cover;
 }
 
 .modal {
