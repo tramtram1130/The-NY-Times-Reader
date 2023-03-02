@@ -14,17 +14,47 @@
   flex-direction: row;
 }
 
-.modal-writer {
+.modal-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-writer-date-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.modal-writer, .modal-published-date {
   margin-top: -.5rem;
 }
 
 .modal-image-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 25vw;
+  align-items: center;
+  align-self: center;
 }
 
 .modal-image {
   width: 25vw;
+}
+
+.modal-photographer {
+  margin-top: .1rem;
+  font-style: italic;
+  font-size: .7rem;
+  align-self: end;
+}
+
+.modal-image-caption {
+  margin-top: .1rem;
+  font-size: .7rem;
+}
+
+.modal-abstract {
+  margin-top: .3rem;
 }
 
 .modal-nav {
