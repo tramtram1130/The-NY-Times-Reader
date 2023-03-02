@@ -8,7 +8,6 @@ const App = () => {
 
   const [articles, setArticles] = useState([])
   const [filteredArticles, setFilteredArticles] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
 
   const getHomeArticles = async () => {
