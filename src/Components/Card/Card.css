@@ -1,0 +1,32 @@
+.card {
+  width: 30vw;
+  height: fit-content;
+}
+
+.card-image {
+  width: 30vw;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-writer {
+  margin-top: -.5rem;
+}
+
+.modal-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image {
+  width: 25vw;
+}
+
+.modal-nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: underline;
+}
