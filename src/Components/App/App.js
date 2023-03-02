@@ -20,6 +20,15 @@ const App = () => {
     }
   }
 
+  const getFilteredArticles = async (genre) => {
+    try {
+      const filteredArticles = await getArticles(genre)
+      setFilteredArticles(filteredArticles.results)
+    } catch (error) {
+      setError(error)
+    }
+  }
+
   useEffect(() => {
     getHomeArticles()
   }, []);
@@ -27,7 +36,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="Header">
-        <Header />
+        <Header getFilteredArticles={getFilteredArticles} />
         {!filteredArticles.length ? <CardContainer articles={articles}/> : <CardContainer articles={filteredArticles}/>}
       </header>
     </div>
