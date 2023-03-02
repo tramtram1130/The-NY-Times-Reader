@@ -1,6 +1,8 @@
+
 .genre-links {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .genre-links > p {
