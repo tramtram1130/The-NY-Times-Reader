@@ -1,28 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 
-const Header = () => {
+const Header = ({ getFilteredArticles }) => {
+
+  const [genre, setGenre] = useState('')
+
+  const handleFiltering = (e) => {
+    e.preventDefault()
+    let genre = e.target.innerText.toLowerCase().split('.').join('').split(' ').join('')
+    if (e.target.innerText === 'N.Y.') {
+      genre = 'nyregion' 
+    } 
+    console.log(genre)
+    setGenre(genre)
+
+    getFilteredArticles(genre)
+  }
+
   return (
     <div>
       <h1>The New York Times Reader</h1>
-      <nav className='genre-links'>
-        <a>World</a>
-        <a>U.S.</a>
-        <a>Politics</a>
-        <a>N.Y.</a>
-        <a>Business</a>
-        <a>Opinion</a>
-        <a>Science</a>
-        <a>Health</a>
-        <a>Sports</a>
-        <a>Arts</a>
-        <a>Books</a>
-        <a>Style</a>
-        <a>Food</a>
-        <a>Travel</a>
-        <a>Magazine</a>
-        <a>Real Estate</a>
-      </nav>
+      <div className='genre-links'>
+        <p onClick={e => handleFiltering(e)}>World</p>
+        <p onClick={e => handleFiltering(e)}>U.S.</p>
+        <p onClick={e => handleFiltering(e)}>Politics</p>
+        <p onClick={e => handleFiltering(e)}>N.Y.</p>
+        <p onClick={e => handleFiltering(e)}>Business</p>
+        <p onClick={e => handleFiltering(e)}>Opinion</p>
+        <p onClick={e => handleFiltering(e)}>Science</p>
+        <p onClick={e => handleFiltering(e)}>Health</p>
+        <p onClick={e => handleFiltering(e)}>Sports</p>
+        <p onClick={e => handleFiltering(e)}>Arts</p>
+        <p onClick={e => handleFiltering(e)}>Books</p>
+        <p onClick={e => handleFiltering(e)}>Style</p>
+        <p onClick={e => handleFiltering(e)}>Food</p>
+        <p onClick={e => handleFiltering(e)}>Travel</p>
+        <p onClick={e => handleFiltering(e)}>Magazine</p>
+        <p onClick={e => handleFiltering(e)}>Real Estate</p>
+      </div>
     </div>
   )
 }
