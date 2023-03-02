@@ -1,6 +1,8 @@
 import React from 'react'
 import './CardContainer.css'
 import Card from '../Card/Card'
+import imgComingSoon from '../../assets/images/image-coming-soon.jpeg'
+
 
 const CardContainer = ({ articles }) => {
 
@@ -10,9 +12,12 @@ const CardContainer = ({ articles }) => {
       title={article.title}
       abstract={article.abstract}
       genre={article.section}
-      img={article.multimedia && article.multimedia[0].url}
+      img={article.multimedia ? article.multimedia[0].url : imgComingSoon}
+      photographer={article.multimedia && article.multimedia[0].copyright}
+      imgCaption={article.multimedia && article.multimedia[0].caption}
       url={article.url}
       writer={article.byline}
+      publishedDate={article.published_date}
     />
   })
 

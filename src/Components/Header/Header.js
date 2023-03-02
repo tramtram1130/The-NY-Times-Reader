@@ -1,26 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Header.css'
 
 const Header = ({ getFilteredArticles }) => {
-
-  const [genre, setGenre] = useState('')
 
   const handleFiltering = (e) => {
     e.preventDefault()
     let genre = e.target.innerText.toLowerCase().split('.').join('').split(' ').join('')
     if (e.target.innerText === 'N.Y.') {
       genre = 'nyregion' 
-    } 
-    console.log(genre)
-    setGenre(genre)
-
+    }
     getFilteredArticles(genre)
   }
 
   return (
-    <div>
+    <div className='header'>
       <h1>The New York Times Reader</h1>
       <div className='genre-links'>
+        <p onClick={e => handleFiltering(e)}>Home</p>
         <p onClick={e => handleFiltering(e)}>World</p>
         <p onClick={e => handleFiltering(e)}>U.S.</p>
         <p onClick={e => handleFiltering(e)}>Politics</p>
