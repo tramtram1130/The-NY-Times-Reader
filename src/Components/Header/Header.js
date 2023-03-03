@@ -14,7 +14,7 @@ const Header = ({ getFilteredArticles }) => {
 
   return (
     <div className='header'>
-      <h1>The New York Times Reader</h1>
+      <h1 className='title'>The New York Times Reader</h1>
       <div className='genre-links'>
         <p onClick={e => handleFiltering(e)}>Home</p>
         <p onClick={e => handleFiltering(e)}>World</p>
