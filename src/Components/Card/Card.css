@@ -1,6 +1,7 @@
 .card {
   width: 30vw;
   height: fit-content;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
 }
 
 .card-image {
@@ -32,13 +33,13 @@
 .modal-image-container {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 20vw;
   align-items: center;
   align-self: center;
 }
 
 .modal-image {
-  width: 25vw;
+  width: 20vw;
 }
 
 .modal-photographer {

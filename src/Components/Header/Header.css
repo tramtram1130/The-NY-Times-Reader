@@ -1,5 +1,12 @@
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
 
 .genre-links {
+  border-top: 1.5px solid rgb(54, 54, 54);
+  border-bottom: 4.5px double black;
   display: flex;
   flex-direction: row;
   justify-content: center;
