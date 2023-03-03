@@ -5,7 +5,7 @@
 
 <h3 align="center">A news reader application that pulls articles from the New York Times Top Stories API</h3>
 
-<h4 align="center"><a href="https://critter-companion.vercel.app/"><strong>Deploy Link</strong></a></h4>
+<!-- <h4 align="center"><a href="https://critter-companion.vercel.app/"><strong>Deploy Link</strong></a></h4> -->
 
 <p></p>
 
