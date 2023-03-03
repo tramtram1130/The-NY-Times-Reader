@@ -36,7 +36,8 @@ The NY Times Reader provides the end user previews of top stories from The New Y
 <br>
 <p align="center">
     <img width="600" src="https://user-images.githubusercontent.com/110209726/222772506-928036ad-8566-4eb9-851e-1f53e1424881.png" alt="Wireframe">
-      <img width="600" src="https://user-images.githubusercontent.com/110209726/222779214-bba4fc21-9c05-43cd-8e8e-bc53478b8f1a.png" alt="Home view">
+    <img width="600" src="https://user-images.githubusercontent.com/110209726/222782017-193343fb-4156-4a30-89a7-488cdee9a921.png" alt="Component Map">
+    <img width="600" src="https://user-images.githubusercontent.com/110209726/222779214-bba4fc21-9c05-43cd-8e8e-bc53478b8f1a.png" alt="Home view">
     <img width="600" src="https://user-images.githubusercontent.com/110209726/222779212-dbf36c17-0318-4ff1-adb1-26952ee72fb0.png" alt="Detail view">
 </p>
 
